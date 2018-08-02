@@ -65,7 +65,7 @@ const Places = [
 {
     id: "The-Vault-of-Soho",
     name: "The Vault of Soho",
-    website:"",
+    website:"http://www.thevaultsoho.co.uk/",
     address:"3 Greek Street Soho London W1D 4NX",
     description:"Chic bar hidden away behind a bookcase and offering a refined environment for classic cocktails.",
     category:['bar', 'theme'],
@@ -77,7 +77,7 @@ const Places = [
     website:"http://www.bandhbuildings.com/",
     address:"Bourne & Hollingsworth Buildings 42 Northampton Road Clerkenwell EC1R 0HU",
     description:"The Bourne and Hollingsworth Buildings might look like an idyllic bar, but it's got a bit of a secret. Have a wonder around the bar, look behind a few pieces of furniture and you might stumble upon Below & Hidden, a secret basement bar based underneath the venue. Grab a cocktail and soak up everything this charming little venue has to offer.",
-    category:['', ''],
+    category:['bar', 'restaurant'],
 },
 
 {
