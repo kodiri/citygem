@@ -1,0 +1,30 @@
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    background-color: darkred;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transform: all 3s ease-in;
+
+}
+
+/* .nav-item {
+    position: relative;
+        top: 0;
+        margin: 10px;
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px; 
+        color: white;
+        text-align: center;
+        transform: all 3s ease-in;
+        cursor: pointer;
+} */
