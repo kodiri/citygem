@@ -4,8 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
 }
 
 .gallery > h1{
     letter-spacing: 30px;
+    text-align: center;
 }

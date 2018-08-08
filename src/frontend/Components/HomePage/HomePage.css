@@ -11,7 +11,7 @@
     background-color: rgba(255,255,255,.75);
     box-shadow: 0 1em 2em -1em rgba(0,0,0,.5);
     border-radius: 2%;
-    padding: 1em 1.2em;
+    padding: 0.7em;
     line-height: 1.5;
     /* border: 3px solid rgba(126, 122, 122, 0.137); */
   }
@@ -22,7 +22,6 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    margin-top: 4vw;
     }
     
   .image-background img {
@@ -33,7 +32,6 @@
     -webkit-animation: move 40s ease infinite;
     -o-animation: move 40s ease infinite;
     -moz-animation: move 40s ease infinite;
-    position: absolute;
     }
   
   @-webkit-keyframes move {
