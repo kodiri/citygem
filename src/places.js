@@ -1,7 +1,7 @@
 const Places = [
 {
-    id: "things-to-know-about-holland-parks-kyoto-garden",
-    name: "Kyoto-Gardens",
+    id: "kyoto-garden",
+    name: "Kyoto Gardens",
     website:"https://www.parkgrandkensington.co.uk/blog/things-to-know-about-holland-parks-kyoto-garden/",
     address:"Holland Park, Holland Park Ave, Kensington, London W11 4UA",
     description:"The Kyoto Japanese Garden is a hidden gem wrapped in another hidden gem: Holland Park. The beautiful park is tucked away in smart Kensington and has plenty of its own hidden corners, with winding paths, statues, peacocks, an opera house and an orangery, alongside the tranquil Kyoto Gardens",
@@ -9,7 +9,7 @@ const Places = [
 },
 
 {
-    id: "Whats-on-Detectives",
+    id: "evans-and-peel-detective-agency",
     name: "Evans & Peel Detective Agency",
     website:"http://www.evansandpeel.com/Whats-on-Detectives",
     address:"Underneath Juice Club, 28 Bedfordbury, London WC2N 4RB,",
@@ -18,7 +18,7 @@ const Places = [
 },
 
 {
-    id: "The-Luggage-Room",
+    id: "the-luggage-room",
     name: "The Luggage Room",
     website:"http://luggageroom.co.uk/",
     address:"The Luggage Room Grosvenor Square London W1K 6JP",
@@ -27,7 +27,7 @@ const Places = [
 },
 
 {
-    id: "The-Mayor-of-Scaredy-Cat-Town",
+    id: "the-mayor-of-scaredy-cat-town",
     name: "The Mayor of Scaredy Cat Town",
     website:"http://www.themayorofscaredycattown.com/",
     address:"12 Artillery Lane, London E1 7LS, England",
@@ -36,7 +36,7 @@ const Places = [
 },
 
 {
-    id: "about-us",
+    id: "the-castle-cinema",
     name: "The Castle Cinema",
     website:"https://thecastlecinema.com/about-us/",
     address:"64 Brooksby's Walk London E9 6DA",
@@ -45,7 +45,7 @@ const Places = [
 },
 
 {
-    id: "/whats-on/2018/event/conservatory",
+    id: "barbican-conservatory",
     name: "The Barbican Conservatory",
     website:"https://www.barbican.org.uk/whats-on/2018/event/conservatory",
     address:"Barbican Centre Silk Street, London EC2Y 8DS",
@@ -54,7 +54,7 @@ const Places = [
 },
 
 {
-    id: "Bermondsey-Arts-Club",
+    id: "bermondsey-arts-club",
     name: "Bermondsey Arts Club",
     website:"http://bermondseyartsclub.co.uk/",
     address:"102A Tower Bridge Rd  London  SE1 4TP ",
@@ -63,7 +63,7 @@ const Places = [
 },
 
 {
-    id: "The-Vault-of-Soho",
+    id: "vault-of-soho",
     name: "The Vault of Soho",
     website:"http://www.thevaultsoho.co.uk/",
     address:"3 Greek Street Soho London W1D 4NX",
@@ -72,8 +72,8 @@ const Places = [
 },
 
 {
-    id: "BOURNE-AND-HOLLINGSWORTH-BUILDINGS",
-    name: "BOURNE AND HOLLINGSWORTH BUILDINGS",
+    id: "bourne-and-hollingsworth-buildings",
+    name: "Bourne And Hollingsworth Buildings",
     website:"http://www.bandhbuildings.com/",
     address:"Bourne & Hollingsworth Buildings 42 Northampton Road Clerkenwell EC1R 0HU",
     description:"The Bourne and Hollingsworth Buildings might look like an idyllic bar, but it's got a bit of a secret. Have a wonder around the bar, look behind a few pieces of furniture and you might stumble upon Below & Hidden, a secret basement bar based underneath the venue. Grab a cocktail and soak up everything this charming little venue has to offer.",
@@ -81,8 +81,8 @@ const Places = [
 },
 
 {
-    id: "BAR-ELBA",
-    name: "BAR ELBA",
+    id: "bar-elba",
+    name: "Bar Elba",
     website:"http://www.bar-elba.co.uk/",
     address:"Rooftop, Mercury House 109-117 Waterloo Road London, SE1 8UL , opposite Waterloo station",
     description:"Sitting on the rooftop of quirky bar Tonight Josephine, Bar Elba is a tropical island paradise (named after the Mediterranean island of the same name) complete with sunny colours, block lettering and a summer cocktail menu with over twenty different mixed drinks.",
@@ -91,7 +91,7 @@ const Places = [
 
 {
     id: "pergola-paddington",
-    name: "PERGOLA",
+    name: "Pergola",
     website:"https://pergolalondon.com/pergola-paddington",
     address:"5 Kingdom Street, Paddington Central, W2 6PY",
     description:"Introducing drinking and dining into a new era…Our mission is to take unloved and unused spaces and turn them into unique, big and beautiful destinations ~ restaurants, bars, city skylines, atmosphere, music, seating for all and general good times – all under our iconic pergola.",
@@ -99,7 +99,7 @@ const Places = [
 },
 
 {
-    id: "private-dining.html",
+    id: "caboose-dining",
     name: "Caboose",
     website:"http://www.wearecaboose.com/private-dining.html",
     address:"The Old Truman Brewery, Ely’s Yard, Brick Lane, E1 6QL",
@@ -108,7 +108,7 @@ const Places = [
 },
 
 {
-    id: "Gremio-de-Brixton",
+    id: "gremio-de-brixton",
     name: "Gremio de Brixton",
     website:"http://gremiodebrixton.com/",
     address:"Effra Rd, Brixton, London SW2 1JF",
@@ -117,7 +117,7 @@ const Places = [
 },
 
 {
-    id: "Postman's-Park",
+    id: "postman's-park",
     name: "Postman's Park",
     website:"https://www.cityoflondon.gov.uk/things-to-do/green-spaces/city-gardens/visitor-information/Pages/Postman%27s-Park.aspx",
     address:" King Edward Street, London EC1A 7BT",
