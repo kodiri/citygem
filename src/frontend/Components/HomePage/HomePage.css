@@ -27,6 +27,7 @@
     
   .image-background img {
     width: 100%;
+    height: 100%;
     animation: move 40s ease infinite;
     -ms-animation: move 40s ease infinite;
     -webkit-animation: move 40s ease infinite;
