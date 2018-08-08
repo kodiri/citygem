@@ -1,6 +1,6 @@
 .thumbnail-container{
     border: 1px solid black;
-    width: 12rem;
+    width: 20%;
     margin: 10px 20px;
     flex: 1 1 200px;
 }
