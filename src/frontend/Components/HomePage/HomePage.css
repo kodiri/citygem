@@ -34,40 +34,60 @@
     -moz-animation: move 40s ease infinite;
     }
   
-  @-webkit-keyframes move {
-    0% {
-      -webkit-transform-origin: left;
-      -moz-transform-origin: left;
-      -ms-transform-origin: left;
-      -o-transform-origin: left;
-      transform-origin: left;
-      transform: scale(1.0);
-      
-      -ms-transform: scale(1.0);
-      /* IE 9 */
-      
-      -webkit-transform: scale(1.0);
-      /* Safari and Chrome */
-      
-      -o-transform: scale(1.0);
-      /* Opera */
-      
-      -moz-transform: scale(1.0);
-      /* Firefox */
-    }
-  
-    100% {
-      transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      /* IE 9 */
-      
-      -webkit-transform: scale(1.2);
-      /* Safari and Chrome */
-      
-      -o-transform: scale(1.2);
-      /* Opera */
-      
-      -moz-transform: scale(1.2);
-      /* Firefox */
-    }
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    transform: scale(1.0);
+    
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+    
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+    
+    -o-transform: scale(1.0);
+    /* Opera */
+    
+    -moz-transform: scale(1.0);
+    /* Firefox */
   }
+
+  50% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    
+    -webkit-transform: scale(1.1);
+    /* Safari and Chrome */
+    
+    -o-transform: scale(1.1);
+    /* Opera */
+    
+    -moz-transform: scale(1.1);
+    /* Firefox */
+  }
+  100% {
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    transform: scale(1.0);
+    
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+    
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+    
+    -o-transform: scale(1.0);
+    /* Opera */
+    
+    -moz-transform: scale(1.0);
+    /* Firefox */
+  }
+}
