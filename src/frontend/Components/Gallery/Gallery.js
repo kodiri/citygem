@@ -6,7 +6,7 @@ import Thumbnail from './../Thumbnail/Thumbnail';
 export default class Gallery extends Component {
 
     render() {
-        console.log(Places)
+        
         return (
             <div className="gallery">
                 <h1>GALLERY</h1>
