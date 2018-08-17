@@ -23,14 +23,14 @@
     padding: 1rem;
     text-align: center;
     text-transform: uppercase;
-    border-right: 1px solid black;
     color: white;
-    background-image: linear-gradient(rgba(75, 75, 75, 0.726), rgba(165, 165, 165, 0.377));
+    background-image: linear-gradient(rgba(7, 30, 56, 0.726), rgba(48, 107, 175, 0.3));
+    cursor: pointer;
 }
 
-.category-navbar li:nth-child(1){
+/* .category-navbar li:nth-child(1){
     border-left: 1px solid black;
-}
+} */
 
 .slider-image-container{
     width: 20000px;
