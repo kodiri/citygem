@@ -1,21 +1,3 @@
-.title-citygem {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    /* z-index: 99; */
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 300;
-    text-transform: uppercase;
-    background-color: rgba(255,255,255,.75);
-    box-shadow: 0 1em 2em -1em rgba(0,0,0,.5);
-    border-radius: 2%;
-    padding: 0.7em;
-    line-height: 1.5;
-    /* border: 3px solid rgba(126, 122, 122, 0.137); */
-  }
-  
   .image-background {
     width: 100%;
     height: 50vw;
@@ -34,40 +16,60 @@
     -moz-animation: move 40s ease infinite;
     }
   
-  @-webkit-keyframes move {
-    0% {
-      -webkit-transform-origin: left;
-      -moz-transform-origin: left;
-      -ms-transform-origin: left;
-      -o-transform-origin: left;
-      transform-origin: left;
-      transform: scale(1.0);
-      
-      -ms-transform: scale(1.0);
-      /* IE 9 */
-      
-      -webkit-transform: scale(1.0);
-      /* Safari and Chrome */
-      
-      -o-transform: scale(1.0);
-      /* Opera */
-      
-      -moz-transform: scale(1.0);
-      /* Firefox */
-    }
-  
-    100% {
-      transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      /* IE 9 */
-      
-      -webkit-transform: scale(1.2);
-      /* Safari and Chrome */
-      
-      -o-transform: scale(1.2);
-      /* Opera */
-      
-      -moz-transform: scale(1.2);
-      /* Firefox */
-    }
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    transform: scale(1.0);
+    
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+    
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+    
+    -o-transform: scale(1.0);
+    /* Opera */
+    
+    -moz-transform: scale(1.0);
+    /* Firefox */
   }
+
+  50% {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    
+    -webkit-transform: scale(1.1);
+    /* Safari and Chrome */
+    
+    -o-transform: scale(1.1);
+    /* Opera */
+    
+    -moz-transform: scale(1.1);
+    /* Firefox */
+  }
+  100% {
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    transform: scale(1.0);
+    
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+    
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+    
+    -o-transform: scale(1.0);
+    /* Opera */
+    
+    -moz-transform: scale(1.0);
+    /* Firefox */
+  }
+}

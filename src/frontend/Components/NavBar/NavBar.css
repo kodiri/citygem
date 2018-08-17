@@ -12,6 +12,10 @@ nav .nav-textbox {
     z-index: 1000;
 }
 
+.nav-textbox a:-webkit-any-link {
+    text-decoration: none;
+}
+
 .nav-item {
     background-color: inherit;
     text-decoration: none;

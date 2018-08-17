@@ -1,13 +1,22 @@
 .thumbnail-container{
+<<<<<<< HEAD
     border: 1px solid black;
     width: 100rem;
     margin: 10px 20px;
     flex: 1 1 200px;
+=======
+    width: 100rem;
+    margin: 10px 20px;
+    flex: 1 1 30%;
+>>>>>>> upstream/master
     height: 20rem;
     align-items: center;
     background-size: cover;
     position: relative;
+<<<<<<< HEAD
     
+=======
+>>>>>>> upstream/master
 }
 
 
