@@ -1,13 +1,11 @@
 .thumbnail-container{
-    border: 1px solid black;
     width: 100rem;
     margin: 10px 20px;
-    flex: 1 1 200px;
+    flex: 1 1 30%;
     height: 20rem;
     align-items: center;
     background-size: cover;
     position: relative;
-    
 }
 
 
