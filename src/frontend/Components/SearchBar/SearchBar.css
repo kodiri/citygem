@@ -1,0 +1,28 @@
+.search-container{
+    height: 100vh;
+    width: 100%; 
+}
+
+.search-input{
+    margin: 3rem auto;
+    width: 70%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.searchbar{
+    padding: 1rem;
+    width: 100%;
+    background-color: #3CBC8D;
+    border: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+input.searchbar::placeholder{
+    color: rgba(255, 255, 255, 0.644);
+}
+

@@ -1,75 +1,139 @@
-  .image-background {
-    width: 100%;
-    height: 50vw;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    }
-    
-  .image-background img {
-    width: 100%;
-    height: 100%;
-    animation: move 40s ease infinite;
-    -ms-animation: move 40s ease infinite;
-    -webkit-animation: move 40s ease infinite;
-    -o-animation: move 40s ease infinite;
-    -moz-animation: move 40s ease infinite;
-    }
-  
-@-webkit-keyframes move {
-  0% {
-    -webkit-transform-origin: left;
-    -moz-transform-origin: left;
-    -ms-transform-origin: left;
-    -o-transform-origin: left;
-    transform-origin: left;
-    transform: scale(1.0);
-    
-    -ms-transform: scale(1.0);
-    /* IE 9 */
-    
-    -webkit-transform: scale(1.0);
-    /* Safari and Chrome */
-    
-    -o-transform: scale(1.0);
-    /* Opera */
-    
-    -moz-transform: scale(1.0);
-    /* Firefox */
-  }
+.logo-city-gem {
+  position: relative;
+  z-index: 200;
+  display: block;
+}
 
-  50% {
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    /* IE 9 */
-    
-    -webkit-transform: scale(1.1);
-    /* Safari and Chrome */
-    
-    -o-transform: scale(1.1);
-    /* Opera */
-    
-    -moz-transform: scale(1.1);
-    /* Firefox */
+.logo-citygem {
+  z-index: 300;
+  position: absolute;
+  width: 50%;
+  height: auto;
+  padding: 15% 25%;
+}
+
+.slogan-gem {
+  width: 100%;
+  position: relative;
+}
+
+.title-citygem {
+  z-index: 200;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 35px;
+  display: block;
+  bottom: 15px;
+}
+
+.shimmer {
+  margin: 0 auto;
+  display: inline;
+  opacity: 0.8;
+}
+
+.shimmer {
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, ivory));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, ivory));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, ivory));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
   }
   100% {
-    -webkit-transform-origin: left;
-    -moz-transform-origin: left;
-    -ms-transform-origin: left;
-    -o-transform-origin: left;
-    transform-origin: left;
-    transform: scale(1.0);
-    
-    -ms-transform: scale(1.0);
-    /* IE 9 */
-    
-    -webkit-transform: scale(1.0);
-    /* Safari and Chrome */
-    
-    -o-transform: scale(1.0);
-    /* Opera */
-    
-    -moz-transform: scale(1.0);
-    /* Firefox */
+    background-position: top right;
   }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+.image-background {
+  width: 100%;
+  height: 50vw;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(black, silver);
+  }
+
+.london-image {
+    opacity: 0.5;
+}
+  
+.image-background img {
+  width: 100%;
+  height: 100%;
+  animation: move 40s ease infinite;
+  -ms-animation: move 40s ease infinite;
+  -webkit-animation: move 40s ease infinite;
+  -o-animation: move 40s ease infinite;
+  -moz-animation: move 40s ease infinite;
+  }
+
+@-webkit-keyframes move {
+0% {
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
+  transform-origin: left;
+  transform: scale(1.0);
+}
+
+50% {
+  transform: scale(1.1);
+}
+100% {
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
+  transform-origin: left;
+  transform: scale(1.0);
+}
 }
