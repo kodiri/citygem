@@ -16,9 +16,6 @@ export default class Gallery extends Component {
     }
 
     render() {
-<<<<<<< HEAD
-        
-=======
 
         let filteredPlaces = Places.filter((place) => {
             return (
@@ -29,14 +26,10 @@ export default class Gallery extends Component {
             )
         })
 
->>>>>>> upstream/master
         return (
             <div className="gallery">
                 <h1>GALLERY</h1>
                 <div className="gallery-container">
-<<<<<<< HEAD
-                    {Places.map((place) => <Thumbnail name={place.name} id={place.id}/>)}
-=======
                     <div className="search-input">
                         <input
                             type="text"
@@ -54,7 +47,6 @@ export default class Gallery extends Component {
                                     <div>Sorry we can't find what you are looking for</div>
                             }
                     </div>
->>>>>>> upstream/master
                 </div>
             </div>
         )
