@@ -42,7 +42,10 @@ export default class Gallery extends Component {
                             {
                                 filteredPlaces.length > 0 ? 
                                     filteredPlaces.map((filteredPlace) => {
-                                        return <Thumbnail name={filteredPlace.name} id={filteredPlace.id} />
+                                        return <Thumbnail 
+                                            name={filteredPlace.name} 
+                                            id={filteredPlace.id} 
+                                            detail={filteredPlace.synopsis} />
                                     }) : 
                                     <div>Sorry we can't find what you are looking for</div>
                             }
