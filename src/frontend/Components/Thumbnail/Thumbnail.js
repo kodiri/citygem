@@ -10,9 +10,9 @@ export default function Thumbnail(props) {
                 <img alt={props.name} src={require(`../Images/${props.id}.jpg`)}></img>
             </a>
             <div className="thumbnail-text">
-                <h5>{props.name}</h5>
+                <h5>{props.category[0]}</h5>
                 <h4>{props.name}</h4>
-                <p>{props.name}</p>
+                <p>{props.detail}</p>
             </div>
         </div>
     )
