@@ -1,10 +1,14 @@
-.gallery {
-    display: block;
-}
-
 .gallery-container{
-    width: 100%;
+    padding: 10em 0;
+    position: relative;
+    align-content: center;
+    width: 1300px;
     margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        padding: 10em 0;
+    }
 }
 
 .gallery > h1{
@@ -13,10 +17,12 @@
 } 
 
 .search-container{
-    height: 100vh;  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(auto-fill, 1fr);
+    grid-gap: 2rem;
+    height: 100%;  
     width: 100%; 
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
