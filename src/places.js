@@ -6,7 +6,7 @@ const Places = [
     address:"Holland Park, Holland Park Ave, Kensington, London W11 4UA",
     synopsis: "Garden with colourful plants, shrubs and water feautres...",
     description:"The Kyoto Japanese Garden is a hidden gem wrapped in another hidden gem: Holland Park. The beautiful park is tucked away in smart Kensington and has plenty of its own hidden corners, with winding paths, statues, peacocks, an opera house and an orangery, alongside the tranquil Kyoto Gardens",
-    category:['gardens', 'theme'],
+    category:['outdoor activity','gardens', 'theme'],
 },
 
 {
@@ -46,7 +46,7 @@ const Places = [
     address:"64 Brooksby's Walk London E9 6DA",
     synopsis: "The boutique cinema is a bit of a stunner too...",
     description:"Since it opened in 1913, The Castle in Clapton has been a cinema, a bingo hall, a shoe factory and a snooker club. Now, after raising £57,000 on Kickstarter, a local couple has restored it back to its former filmic glory. And it’s gorgeous. There’s an art deco bar – all elegant marble tables and velvet cocktail chairs. The boutique cinema is a bit of a stunner too, with a petite screen, 80 retro hotel seats and a curved ceiling covered in ornate gold plasterwork that’ll make your face look like the heart-eye emoji.",
-    category:['bar', 'theme'],
+    category:['cinema', 'bar', 'theme'],
 },
 
 {
@@ -54,9 +54,9 @@ const Places = [
     name: "The Barbican Conservatory",
     website:"https://www.barbican.org.uk/whats-on/2018/event/conservatory",
     address:"Barbican Centre Silk Street, London EC2Y 8DS",
-    synopsis: "HOme to exotic fish and tropical plants and trees...",
+    synopsis: "Home to exotic fish and tropical plants and trees...",
     description:"Visit the second biggest Conservatory in London and explore our hidden tropical oasis in the heart of the city. Home to exotic fish and over 2,000 species of tropical plants and trees, a visit to our Conservatory is a perfect way to enjoy a lazy Sunday with friends and family. Did you know: the large concrete tower you'll see at the centre of the Conservatory is our Theatre flytower.",
-    category:['theme', 'garden'],
+    category:['garden','theme'],
 },
 
 {
@@ -64,7 +64,7 @@ const Places = [
     name: "Bermondsey Arts Club",
     website:"http://bermondseyartsclub.co.uk/",
     address:"102A Tower Bridge Rd  London  SE1 4TP ",
-    synopsis: "",
+    synopsis: "The latest public lav to go through the process of hipsterfication...",
     description:"The latest public lav to go through the process of hipsterfication is this art deco-style cocktail bar and music venue in Southwark. Run by art school graduate George Garnier.",
     category:['bar', 'theme'],
 },
@@ -74,7 +74,7 @@ const Places = [
     name: "The Vault of Soho",
     website:"http://www.thevaultsoho.co.uk/",
     address:"3 Greek Street Soho London W1D 4NX",
-    synopsis: "",
+    synopsis: "Chic bar hidden away behind a bookcase...",
     description:"Chic bar hidden away behind a bookcase and offering a refined environment for classic cocktails.",
     category:['bar', 'theme'],
 },
@@ -86,7 +86,7 @@ const Places = [
     address:"Bourne & Hollingsworth Buildings 42 Northampton Road Clerkenwell EC1R 0HU",
     synopsis: "Grab a cocktail and soak up everything in this charming little venue...",
     description:"The Bourne and Hollingsworth Buildings might look like an idyllic bar, but it's got a bit of a secret. Have a wonder around the bar, look behind a few pieces of furniture and you might stumble upon Below & Hidden, a secret basement bar based underneath the venue. Grab a cocktail and soak up everything this charming little venue has to offer.",
-    category:['bar', 'restaurant'],
+    category:['restaurant','bar'],
 },
 
 {
@@ -116,7 +116,7 @@ const Places = [
     address:"The Old Truman Brewery, Ely’s Yard, Brick Lane, E1 6QL",
     synopsis: "A Caboose is the last carriage on a train...",
     description:"Caboose is a word for the last carriage in a train – and this Brick Lane restaurant is indeed located inside a derelict carriage that’s been restored. You book in advance for private cabin dining, for which there’s a set menu for £30 per head. It’s available for between 8 to 11 people (12 or 13 at a push) between 8pm – 11pm.",
-    category:['bar', 'restaurant'],
+    category:['restaurant','bar'],
 },
 
 {
@@ -136,7 +136,7 @@ const Places = [
     address:" King Edward Street, London EC1A 7BT",
     synopsis: "A quiet, lovely little park hiding amongst big building in a busy area...",
     description:"Postman’s Park gained its name due to its popularity as a lunch spot with workers from the nearby old General Post Office. Now it's home to the unique Watts memorial, a gallery of glazed tablets commemorating tragic acts of bravery. This corner of green space would be an even better kept secret it weren't for Jude Law's character visiting the park in the 2004 film Closer",
-    category:['garden', 'theme'],
+    category:['outdoor activity','garden', 'theme'],
 },
 
 
