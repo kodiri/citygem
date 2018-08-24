@@ -22,13 +22,12 @@ export default class Gallery extends Component {
                 place.name
                     .toLowerCase()
                     .includes(this.state.search.toLowerCase()) ||
-                place.category.includes(this.state.search.toLowerCase())
+                place.category.reduce((str, cat)=>str+cat,'').includes(this.state.search.toLowerCase())
             )
         })
 
         return (
             <div className="gallery">
-                <h1>GALLERY</h1>
                 <div className="gallery-container">
                     <div className="search-input">
                         <input
@@ -45,7 +44,8 @@ export default class Gallery extends Component {
                                         return <Thumbnail 
                                             name={filteredPlace.name} 
                                             id={filteredPlace.id} 
-                                            detail={filteredPlace.synopsis} />
+                                            detail={filteredPlace.synopsis}
+                                            category={filteredPlace.category} />
                                     }) : 
                                     <div>Sorry we can't find what you are looking for</div>
                             }
