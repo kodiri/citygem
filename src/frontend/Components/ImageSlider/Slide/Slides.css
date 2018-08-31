@@ -1,22 +1,24 @@
 .slide-container{
-    width: 50%;
+    width: 20rem;
     height: 100%;
     background-color: black;
     transform: perspective(1px) translateY(-50%);
     position: relative;
     top: 50%;
+    box-sizing: border-box;
 }
 
 .slide-container h2{
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem 2rem;
-    font-size: 1.7rem;
-    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
     width: 100%;
-    margin: 0 2rem;
+    font-size: 1rem;
+    margin: 0;
     position: absolute;
     bottom: 0;
+    right:0;
     left: 50%;
     transform: translate(-50%);
 }

@@ -7,7 +7,7 @@ function NavBar() {
        <nav>
              <ul className="nav-textbox">
                 <Link to="/"><li className="nav-item">Home</li></Link>
-                <li className="nav-item">About</li>
+                <Link to="/about"><li className="nav-item">About</li></Link>
                 <Link to="/explore"><li className="nav-item">Explore</li></Link>
                 <li className="nav-item">News</li>
              </ul>
