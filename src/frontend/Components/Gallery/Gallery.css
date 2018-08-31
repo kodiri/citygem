@@ -1,5 +1,5 @@
 .gallery-container{
-    padding: 10em 0;
+    padding: 5em 0;
     position: relative;
     align-content: center;
     width: 1300px;
@@ -28,8 +28,8 @@
 }
 
 .search-input{
-    margin: 3rem auto;
-    width: 70%;
+    margin: 1rem auto;
+    width: 67%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -37,15 +37,13 @@
 .searchbar{
     padding: 1rem;
     width: 100%;
-    background-color: #3CBC8D;
-    border: none;
-    color: rgb(255, 255, 255);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    font-size: 2rem;
+    background-color: inherit;
+    border: 1px solid silver;
+    color: #333;
+    font-size: 12px;
 }
 
 input.searchbar::placeholder{
-    color: rgba(255, 255, 255, 0.644);
+    color:  silver;
+    text-transform: uppercase;
 }

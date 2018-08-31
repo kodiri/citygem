@@ -3,16 +3,18 @@ import london from '../Images/londonskyline.jpg';
 import logoCityGem from '../Images/logoCityGem_negativ.svg';
 import './HomePage.css';
 import ImageSlider from '../ImageSlider/ImageSlider';
+import NavBar from '../NavBar/NavBar';
 
 class HomePage extends React.Component {
   render() {
     return (
       <div>
+        <NavBar/>
       <header className='header'>
           <div className='container'>
             <div className='logo-city-gem'>
-            <img src={logoCityGem} className='logo-citygem' alt='logo-gem'></img>
-          </div>
+              <img src={logoCityGem} className='logo-citygem' alt='logo-gem'></img>
+            </div>
           <div className='image-background'>
             <h2 className='slogan-gem title-citygem shimmer'>
             The greatest gems are always hidden in the most unlikely places...</h2>
