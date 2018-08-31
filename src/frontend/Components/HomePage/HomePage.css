@@ -7,7 +7,10 @@
 .logo-citygem {
   z-index: 300;
   position: absolute;
-  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80rem;
   height: auto;
   padding: 15% 25%;
 }
