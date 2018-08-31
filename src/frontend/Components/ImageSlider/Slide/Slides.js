@@ -6,9 +6,9 @@ export default function Slide(props){
         let imageUrl = require(`../../Images/${props.id}.jpg`);
         const styles = {
             backgroundImage: `url(${imageUrl})`,
-            backgroundSize: 'cover',
+            backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center'
+            
           }
 
         return (
