@@ -16,8 +16,8 @@ export default class ImageSlider extends Component {
     goToPrevSlide() {
         if(this.state.currentIndex === 0) {
             return this.setState({
-              currentIndex: Places.length - 1,
-              translateValue: (Places.length - 1) * -(this.slideWidth())
+              currentIndex: Places.length - 3,
+              translateValue: (Places.length - 3) * -(this.slideWidth())
             })
           }
           this.setState(prevState => ({
@@ -27,16 +27,16 @@ export default class ImageSlider extends Component {
     }
 
     goToNextSlide() {
-        if(this.state.currentIndex === Places.length - 1) {
+        if(this.state.currentIndex === Places.length - 3) {
             return this.setState({
               currentIndex: 0,
               translateValue: 0
             })
           }
-          this.setState(prevState => ({
+        this.setState(prevState => ({
             currentIndex: prevState.currentIndex + 1,
             translateValue: prevState.translateValue + -(this.slideWidth())
-          }));
+        }));
     }
 
     slideWidth(){

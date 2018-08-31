@@ -1,8 +1,8 @@
 .slider-container{
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
-    width: 80%;
+    width: 60rem;
     margin: 0 auto;
 }
 
@@ -34,7 +34,7 @@
 
 .slider-image-container{
     width: 20000px;
-    height: 67%;
+    height: 65%;
     display: flex;
 }
 
