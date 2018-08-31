@@ -38,22 +38,12 @@
 .shimmer {
   color: rgba(255,255,255,0.1);
   background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, ivory));
-  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, ivory));
-  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, ivory));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
+  /* background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, ivory)); */
   background-size: 125px 100%;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
+  /* background-clip: text; */
   animation-name: shimmer;
-  -webkit-animation-duration: 5s;
-  -moz-animation-duration: 5s;
   animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   background-repeat: no-repeat;
   background-color: black;
@@ -67,6 +57,7 @@
     background-position: top right;
   }
 }
+
 @-webkit-keyframes shimmer {
   0% {
     background-position: top left;
@@ -75,6 +66,7 @@
     background-position: top right;
   }
 }
+
 @-o-keyframes shimmer {
   0% {
     background-position: top left;
@@ -83,6 +75,7 @@
     background-position: top right;
   }
 }
+
 @keyframes shimmer {
   0% {
     background-position: top left;
@@ -109,18 +102,10 @@
   width: 100%;
   height: 100%;
   animation: move 40s ease infinite;
-  -ms-animation: move 40s ease infinite;
-  -webkit-animation: move 40s ease infinite;
-  -o-animation: move 40s ease infinite;
-  -moz-animation: move 40s ease infinite;
   }
 
 @-webkit-keyframes move {
 0% {
-  -webkit-transform-origin: left;
-  -moz-transform-origin: left;
-  -ms-transform-origin: left;
-  -o-transform-origin: left;
   transform-origin: left;
   transform: scale(1.0);
 }
@@ -129,10 +114,6 @@
   transform: scale(1.1);
 }
 100% {
-  -webkit-transform-origin: left;
-  -moz-transform-origin: left;
-  -ms-transform-origin: left;
-  -o-transform-origin: left;
   transform-origin: left;
   transform: scale(1.0);
 }
