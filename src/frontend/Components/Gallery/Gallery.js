@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Gallery.css';
 import Places from '../../../places.js';
 import Thumbnail from './../Thumbnail/Thumbnail';
+import SearchBar from '../SearchBar/SearchBar';
+import NavBar from '../NavBar/NavBar';
 
 export default class Gallery extends Component {
     constructor() {
@@ -28,6 +30,7 @@ export default class Gallery extends Component {
 
         return (
             <div className="gallery">
+            <NavBar page="gallery"/>
                 <div className="gallery-container">
                     <div className="search-input">
                         <input
@@ -37,6 +40,7 @@ export default class Gallery extends Component {
                             placeholder="Looking for something specific.."
                             onChange={(e) => this.updateSearchHandler(e)} />
                     </div>
+                    <SearchBar/>
                     <div className="search-container">
                             {
                                 filteredPlaces.length > 0 ? 

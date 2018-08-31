@@ -30,20 +30,37 @@ nav .nav-textbox {
     letter-spacing: 0.5rem;
 }
 
-.nav-item:nth-child(1){
-    border-left: 1px solid rgba(255, 255, 255, 0.6);
+.gallery-nav-item{
+    background-color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px 30px;
+    cursor: pointer;
+    transform: all 3s ease-in;
+    border-right: 1px solid silver;
+    letter-spacing: 0.5rem;
 }
 
-.nav-item::after {
+.nav-item:nth-child(1),
+.gallery-nav-item:nth-child(1){
+    border-left: 1px solid silver;
+}
+
+.nav-item::after,
+.gallery-nav-item::after {
     content: '';
     width: 0px;
     height: 1px;
     display: block;
-    background: rgba(255, 255, 255, 0.8);
+    background: silver;
     transition: 0.3s;
 }
 
-li.nav-item:hover.nav-item::after{
+li.nav-item:hover.nav-item::after,
+li.gallery-nav-item:hover.gallery-nav-item::after{
     width: 94%;
 }
 
