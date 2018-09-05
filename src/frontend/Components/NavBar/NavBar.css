@@ -44,9 +44,8 @@ nav .nav-textbox {
     letter-spacing: 0.5rem;
 }
 
-.nav-item:nth-child(1),
-.gallery-nav-item:nth-child(1){
-    border-left: 1px solid silver;
+.nav-textbox a:last-child li{
+    border-right: none;    
 }
 
 .nav-item::after,

@@ -1,81 +1,83 @@
-ul {
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-
-.fas {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-}
-
-*, ::before, ::after {
+/* *, ::before, ::after {
     box-sizing: border-box;
-}
-
+} 
 .form-control {
     border-radius: 1px;
     border: 1px solid silver;
     width: 60%;
     height: 38px;
 }
-
 .form-control:focus {
     outline: 0;
 }
-
 .input.form-control {
     text-align: center;
 }
-
 .container-search{
     position: relative;
 }
-
 .search-grid {
     display: none;
-}
-
-.centered-pills {
-    text-align: center;
-    padding: 10px;
-}
-.centered-pills ul.search-nav-pills {
-	display: inline-block;
-	margin-bottom: 10px;
-}
+} 
 .centered-pills li {
 	display: inline;
 }
 .centered-pills a {
 	float: left;
+} */
+
+.nav-pill-container {
+    text-align: center;
 }
 
 .nav-search {
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 12px;
     color: azure;
     text-transform: uppercase;
-    font-weight: lighter;
     letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    padding:0;
+    list-style: none;
+    margin: 0;
 }
 
-.search-nav-pills > li > a{
-    border-radius: 0;
+.nav-search > li .filter{
 	color: silver;
-	border:1px solid silver;
-    margin-right: 23px;
-    margin-bottom: 15px;
+	border: 1px solid silver;
+    margin: 0.7rem;
     text-decoration: none;
-    padding: 13px 20px;
+    padding: 1rem 1.3rem;
 }
 
-.search-nav-pills > li > a:hover,
-.search-nav-pills > li > a:focus,
-.search-nav-pills > li > a.active{
+.nav-search li:last-child .filter{
+    padding-bottom: 0.5rem;
+}
+
+.search-icon{
+    color: silver;
+}
+
+.filter{
+    cursor: pointer;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity:1}
+}
+
+.nav-search > li .filter:hover,
+.nav-search > li .filter:focus{
 	background-color: #333;
+	border-color: #333;
+    color: azure;
+}
+
+.active{
+    background-color: #333;
 	border-color: #333;
     color: azure;
 }
