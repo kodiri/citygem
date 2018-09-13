@@ -26,7 +26,7 @@ export default class Gallery extends Component {
     }
 
     onChangeSearch() {
-        this.setState({ showSearchBar: !this.state.showSearchBar, search: '' });
+        this.setState({ showSearchBar: !this.state.showSearchBar, search: '', category: null });
     }
 
     render() {
@@ -43,7 +43,7 @@ export default class Gallery extends Component {
                     place.category.reduce((str, cat) => str + cat, '').includes(search.toLowerCase())
                 )
             }) :
-            filteredPlaces = Places.filter((place) => {
+            filteredPlaces = places.filter((place) => {
                 return (
                     place.name
                         .toLowerCase()
