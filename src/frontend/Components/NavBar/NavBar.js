@@ -12,7 +12,7 @@ function NavBar(props) {
                 <Link to="/"><li className={pageClass}>Home</li></Link>
                 <Link to="/about"><li className={pageClass}>About</li></Link>
                 <Link to="/explore"><li className={pageClass}>Explore</li></Link>
-                <li className={pageClass}>News</li>
+                <Link to="/about"><li className={pageClass}>News</li></Link>
              </ul>
        </nav>
     )

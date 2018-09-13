@@ -9,7 +9,10 @@ export default class Gallery extends Component {
     constructor() {
         super()
         this.state = {
-            search: ''
+            search: '',
+            showSearchBar: false,
+            category: null,
+            places: Places
         }
     }
 
@@ -17,42 +20,67 @@ export default class Gallery extends Component {
         this.setState({ search: event.target.value })
     }
 
+    onClickHandler(category) {
+        category === 'changeSearchBar' ? this.onChangeSearch() :
+            this.setState({ category })
+    }
+
+    onChangeSearch() {
+        this.setState({ showSearchBar: !this.state.showSearchBar, search: '', category: null });
+    }
+
     render() {
 
-        let filteredPlaces = Places.filter((place) => {
-            return (
-                place.name
-                    .toLowerCase()
-                    .includes(this.state.search.toLowerCase()) ||
-                place.category.reduce((str, cat)=>str+cat,'').includes(this.state.search.toLowerCase())
-            )
-        })
+        let { showSearchBar, search, places, category } = this.state;
+
+        let filteredPlaces;
+        !category ?
+            filteredPlaces = places.filter((place) => {
+                return (
+                    place.name
+                        .toLowerCase()
+                        .includes(search.toLowerCase()) ||
+                    place.category.reduce((str, cat) => str + cat, '').includes(search.toLowerCase())
+                )
+            }) :
+            filteredPlaces = places.filter((place) => {
+                return (
+                    place.name
+                        .toLowerCase()
+                        .includes(category) ||
+                    place.category.reduce((str, cat) => str + cat, '').includes(category)
+                )
+            });
 
         return (
             <div className="gallery">
-            <NavBar page="gallery"/>
+                <NavBar page="gallery" />
                 <div className="gallery-container">
-                    <div className="search-input">
-                        <input
-                            type="text"
-                            className="searchbar"
-                            value={this.state.search}
-                            placeholder="Looking for something specific.."
-                            onChange={(e) => this.updateSearchHandler(e)} />
+                    <div className="searchbar-nav-container">
+                        {showSearchBar ? <div className="search-input">
+                            <input
+                                type="text"
+                                className="searchbar"
+                                value={search}
+                                placeholder="Looking for something specific.."
+                                onChange={(e) => this.updateSearchHandler(e)} />
+                            <div className="search-exit-btn" onClick={() => this.onChangeSearch()}>X</div>
+                        </div> :
+                            <SearchBar onClick={(cat) => this.onClickHandler(cat)} />}
                     </div>
-                    <SearchBar/>
-                    <div className="search-container">
-                            {
-                                filteredPlaces.length > 0 ? 
-                                    filteredPlaces.map((filteredPlace) => {
-                                        return <Thumbnail 
-                                            name={filteredPlace.name} 
-                                            id={filteredPlace.id} 
-                                            detail={filteredPlace.synopsis}
-                                            category={filteredPlace.category} />
-                                    }) : 
-                                    <div>Sorry we can't find what you are looking for</div>
-                            }
+                    <div className="thumbnail-gallery-container">
+                        {
+                            filteredPlaces.length > 0 ?
+                                filteredPlaces.map((filteredPlace) => {
+                                    return <Thumbnail
+                                        key={filteredPlace.id}
+                                        name={filteredPlace.name}
+                                        id={filteredPlace.id}
+                                        detail={filteredPlace.synopsis}
+                                        category={filteredPlace.category} />
+                                }) :
+                                <div className="error-message">Sorry we can't find what you are looking for</div>
+                        }
                     </div>
                 </div>
             </div>

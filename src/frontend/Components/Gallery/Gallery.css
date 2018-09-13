@@ -2,7 +2,7 @@
     padding: 5em 0;
     position: relative;
     align-content: center;
-    width: 1300px;
+    width: 90%;
     margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -16,34 +16,83 @@
     text-align: center;
 } 
 
-.search-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px repeat(auto-fill, 1fr);
-    grid-gap: 2rem;
-    height: 100%;  
-    width: 100%; 
-    justify-content: space-around;
-    text-align: center;
+.searchbar-nav-container{
+    height: 6.5rem;
 }
 
 .search-input{
-    margin: 1rem auto;
+    margin: 0 auto;
     width: 67%;
     box-sizing: border-box;
-    overflow: hidden;
+    display: flex;
+    padding-top: 0.7rem;
+    position: relative;
+}
+
+.error-message{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
 }
 
 .searchbar{
     padding: 1rem;
-    width: 100%;
+    width: 90%;
     background-color: inherit;
     border: 1px solid silver;
     color: #333;
     font-size: 12px;
+    animation-name: stretchBar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes stretchBar {
+    from {width: 0}
+    to {width: 90%}
+}
+
+.searchbar:focus {
+    outline: none;
 }
 
 input.searchbar::placeholder{
     color:  silver;
     text-transform: uppercase;
+}
+
+.search-exit-btn{
+    margin-left: 1em;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    vertical-align: center;
+    color: silver;
+    font-weight: 400;
+    line-height: 3rem;
+    font-size: 2rem;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: color 1s ease;
+}
+
+.search-exit-btn:hover{
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity:1}
+}
+
+.thumbnail-gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(auto-fill, 1fr);
+    grid-gap: 2rem;
+    width: 100%; 
+    justify-content: space-around;
+    text-align: center;
 }
